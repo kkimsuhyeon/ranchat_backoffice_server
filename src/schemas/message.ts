@@ -4,7 +4,7 @@ import { IResolvers } from '@graphql-tools/utils'
 
 export const typeDef = gql`
     type Message {
-        id: Int!
+        messageId: Int!
         text: String
         user: User
         room: Room

@@ -6,7 +6,7 @@ import { Room } from "./Room";
 @Entity()
 export class User extends BaseEntity {
     @PrimaryGeneratedColumn("uuid")
-    id!: string;
+    userId!: string;
 
     @Column({ unique: true })
     email!: string;

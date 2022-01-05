@@ -6,7 +6,7 @@ import { User } from "./User"
 @Entity()
 export class Room extends BaseEntity {
     @PrimaryGeneratedColumn()
-    id!: number;
+    roomId!: number;
 
     @ManyToMany(() => User, (user) => user.rooms, {
         cascade: true,

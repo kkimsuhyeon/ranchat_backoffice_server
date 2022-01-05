@@ -6,7 +6,7 @@ import { User } from '../entities/User'
 
 export const typeDef = gql`
     type User {
-        id: String!
+        userId: String!
         email: String!
         password: String!
         firstName: String!

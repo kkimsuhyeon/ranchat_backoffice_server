@@ -6,7 +6,7 @@ import { User } from "./User";
 @Entity()
 export class Message extends BaseEntity {
     @PrimaryGeneratedColumn()
-    id!: number;
+    messageId!: number;
 
     @Column()
     text: String;
