@@ -1,6 +1,8 @@
 import "reflect-metadata"
 import { Connection, createConnection } from 'typeorm'
 
+import entities from './entities'
+
 const dbConnection = async () => {
 
     try {
@@ -13,6 +15,7 @@ const dbConnection = async () => {
             database: "ranchat",
             // logging: true
             synchronize: true,
+            entities: entities
         })
 
         await db.synchronize();
