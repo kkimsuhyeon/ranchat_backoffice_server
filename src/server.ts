@@ -20,6 +20,8 @@ app.use(cors({ origin: "*", credentials: true }))
 
 app.use("/graphql", (req, res, next) => {
 
+    console.log(req)
+    console.log(res)
     next()
 })
 

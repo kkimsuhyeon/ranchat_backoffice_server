@@ -17,7 +17,9 @@ const apolloConnection = async (app: Application, server: Server) => {
         schema: schema,
         execute: execute,
         subscribe: subscribe,
-        onConnect: async (connectionParams: ConnectionParams) => { }
+        onConnect: async (connectionParams: ConnectionParams) => {
+            console.log(connectionParams)
+        }
     }, { server: server, path: "/graphql" })
 
 
